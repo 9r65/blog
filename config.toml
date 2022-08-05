@@ -1,40 +1,32 @@
-baseURL = 'https://blog.oygza.cc/'
+baseURL = 'https://blog.oygza.cc'
 languageCode = 'zh-CN'
 title = 'oygza'
-theme = 'smigle'
-summaryLength = 2
+theme = 'mini'
+defaultContentLanguage= 'zh'
 
-[menu]
-  [[menu.main]]
-    identifier = 'home'
-    name = '首页'
-    url = '/'
-    weight = 1
-  [[menu.main]]
-    identifier = 'about'
-    name = 'About Me'
-    url = 'https://github.com/oygza'
-    weight = 5
-  [[menu.main]]
-    identifier = 'posts'
-    name = '文章'
-    url = '/posts/'
-    weight = 4
-  [[menu.main]]
-    identifier = 'categories'
-    name = '分类'
-    url = '/categories/'
-    weight = 2
-  [[menu.main]]
-    identifier = 'tags'
-    name = '标签'
-    url = '/tags/'
-    weight = 3
+paginate = 10
+hasCJKLanguage= true
+
+
+[markup]
+ [markup.highlight]
+   guessSyntax = true
+   style = 'friendly'
+ [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+ [markup.goldmark]
+   [markup.goldmark.renderer]
+     unsafe = true
+
+[social]
+  github = 'https://github.com/oygza/'
 
 
 [params]
-  abbrDateFmt = 'Jan 2'
+  github = 'https://github.com/oygza'
+  avatar = 'https://f1.oygza.com/image/avatar.jpg'
+  bio = ' '
   author = 'oygza'
-  brandIconFile = 'http://static-file.oygza.com/mmexport1483959269310.jpg'
-  dateFmt = '2006-01-02'
-  subtitle = " "
+  copyright = '© Copyright 2021 oygza'
